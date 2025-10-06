@@ -1,28 +1,18 @@
 body,
 html {
   height: 100%;
+  background-color: #fdfd96;
 }
 
 * {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-}
-
-/* The hero image */
-.hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("id_card.png");
-
-  /* Set a specific height */
-  height: 100%;
-
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 /* Place text in the middle of the image */
@@ -45,17 +35,38 @@ html {
   padding: 0;
   margin: 0;
   justify-content: center;
+  border-radius: 20px;
 }
 
 /* Style des liens */
-.nav-links a {
+.nav-links li a {
   font-family: "Poppins", sans-serif;
-  font-size: 18px; /* ou 1.125rem, 20px… */
-  font-weight: 600; /* bold si tu veux plus gras */
+  font-size: 18px;
+  font-weight: 600;
   text-decoration: none;
   color: white;
+  padding: 10px 20px;
+  border-radius: 10px; /* coins arrondis */
+  display: inline-block; /* pour que le padding s’applique correctement */
 }
 
+/* Couleurs différentes pour chaque lien */
+.nav-links li:nth-child(1) a {
+  background-color: #2fff2f; /* rouge corail */
+}
+
+.nav-links li:nth-child(2) a {
+  background-color: #4ecdc4; /* turquoise */
+}
+
+.nav-links li:nth-child(3) a {
+  background-color: #ffe66d; /* jaune pastel */
+  color: #333; /* texte sombre pour contraste */
+}
+
+.nav-links li:nth-child(4) a {
+  background-color: #1a535c; /* bleu foncé */
+}
 button {
   border: none;
   outline: 0;
