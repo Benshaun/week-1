@@ -1,30 +1,47 @@
-body,
-html {
-  height: 100%;
-  background-color: #fdfd96;
-}
-
 * {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-  font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  font-family: "Metropolis", sans-serif;
 }
 
-/* Place text in the middle of the image */
-.hero-text {
+.logo {
+  width: 150px;
+  height: auto;
+  background-image: url("images/mon-image.jpg");
+  background-size: cover; /* adapte l’image à la taille de la div */
+  background-position: center; /* centre l’image */
+  background-repeat: no-repeat; /* évite que l’image se répète */
+  border-radius: 10px;
+}
+
+header {
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-shadow: 0 10px 6px rgba(0, 0, 0, 0.1);
+  background-image: url("https://yt3.googleusercontent.com/OZt_yEzqzYrWmBU-Edpdj2j2U12sun73iCO2fsGNGIRKkRyOLtSv9XI2fLfuOG1ueoKIgQOv_w=w2276-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj");
+  background-size: cover; /* garde l’effet plein écran */
+  background-position: center; /* centre l’image */
+  height: 300px;
+}
+
+.intro {
+  color: rgb(0, 0, 0);
+  font-family: "Metropolis", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 50px;
+  padding: auto;
+  text-align: center;
+  line-height: 2;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
 }
 
 /* Mise en page de la liste */
@@ -32,7 +49,7 @@ html {
   list-style: none;
   display: flex;
   gap: 20px;
-  padding: 0;
+  padding: 250px;
   margin: 0;
   justify-content: center;
   border-radius: 20px;
@@ -52,7 +69,7 @@ html {
 
 /* Couleurs différentes pour chaque lien */
 .nav-links li:nth-child(1) a {
-  background-color: #2fff2f; /* rouge corail */
+  background-color: #f4f7f4; /* rouge corail */
 }
 
 .nav-links li:nth-child(2) a {
@@ -79,4 +96,22 @@ button {
   cursor: pointer;
   border-radius: 4px;
   font-size: 18px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* format 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  border-radius: 12px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
